@@ -1,8 +1,7 @@
 #include "../inc/suma.h"
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     int suma = 0;
 
     suma += 5;
