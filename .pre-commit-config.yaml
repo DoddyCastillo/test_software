@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v6.0.0
     hooks:
       - id: check-yaml
       - id: end-of-file-fixer
@@ -9,11 +9,11 @@ repos:
       - id: check-merge-conflict
 
   - repo: https://github.com/pre-commit/mirrors-clang-format
-    rev: v18.1.8
+    rev: v21.1.0
     hooks:
       - id: clang-format
         name: Formating C files with Clang-Format
         files: \.(c|cc|cpp|cxx|h|hh|hpp)$
         args: ["-style=file"]
-default_stages: [commit]
+default_stages: [pre-commit]
 exclude: ^(vendor|build|dist|node_modules|\.git)/
