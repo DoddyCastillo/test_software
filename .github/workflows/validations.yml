@@ -34,12 +34,12 @@ jobs:
         if: success() || failure()
         with:
           name: Ceedling Unit Tests
-          path: /build/artifacts/test/junit_tests_report.xml
+          path: build/artifacts/test/junit_tests_report.xml
           reporter: jest-junit
       - name: Code Coverage Report
         uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-          filename: build/artifacts/gcov/gcovr/GcovCoverageResults.html
+          filename: build/artifacts/gcov/gcovr/GcovCoverageCobertura.xml
           badge: true
           format: markdown
           hide_branch_rate: false

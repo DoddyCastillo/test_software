@@ -247,7 +247,7 @@
     - HtmlBasic
     - HtmlDetailed
     # - Text
-    # - Cobertura
+    - Cobertura
     # - SonarQube
     # - JSON
     # - HtmlInline
@@ -269,6 +269,8 @@
     # :html_title: Test Coverage Report
     :html_medium_threshold: 75
     :html_high_threshold: 90
+    :gcov_options:
+      - --txt
     # :html_absolute_paths: TRUE
     # :html_encoding: UTF-8
 
