@@ -88,5 +88,4 @@ dkms.conf
 
 build/*
 vendor/*
-test/*
 ceedling
